@@ -10,6 +10,7 @@ Pip is the package manager used for Python. This section of the documentation wi
 - Drag it into the Command Prompt
 - You should see the text typed look something like this `python3 C:\Users\(your username)\Downloads\get-pip.py`
 - Run the command and wait
+
 Congrats, you have now installed pip.
 
 ### Installation for Ubuntu

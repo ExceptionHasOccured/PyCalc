@@ -7,6 +7,7 @@ During the setup phase will be working with Command Prompt a fair bit. Despite a
 - Open Command Prompt
 - Type *python3*, this will redirect you to the MS Store
 - Click the Install button and wait
+
 Congrats, now you have Python setup on your computer.
 
 ### Installation for Ubuntu
@@ -15,4 +16,5 @@ Python3 should be installed by default on most Ubuntu Desktop/Server systems but
 - Type `sudo apt install python3`
 - Enter your password
 - When prompted type *y* and wait
+
 Congrats, now you have Python setup on your computer.
