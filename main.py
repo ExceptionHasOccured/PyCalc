@@ -74,7 +74,7 @@ while True:
         else:
             print("Invalid syntax")
     elif args[0] == "get":
-        if len(args) == 2:
+        if len(args) == 3:
             if args[1] == "-eq":
                 x = db.history.find_one({"EID": int(args[2])})
                 print("Equation ID: " + str(x["EID"]))
@@ -84,7 +84,44 @@ while True:
                 print("Operation: " + x["op"])
                 print("Answer: " + str(x["ans"]))
             elif args[1] == "-user":
-                # find user by UID
+                x = db.users.find_one({"UID": args[2]})
+                print("Username: " + x["name"])
+                print("User ID: " + x["UID"])
+                y = db.history.find({"UID": args[2]})
+                print("Equation History;")
+                for z in y:
+                    print("- " + str(z["EID"]))
         else:
             print("Invalid syntax")
- 
+    elif args[0] == "doc":
+        if len(args) == 1:
+            print("For more information on how PyCalc works and how to use it, visit https://exceptionhasoccured.github.io/PyCalc/")
+        elif len(args) == 2:
+            if args[1] == "-repo":
+                print("To view the source code and contribute to this project, visit https://github.com/ExceptionHasOccured/PyCalc")
+            elif args[1] == "-credits":
+                print("PyCalc v1.0")
+                print("Developed by ScratchCat458")
+                print("Documentation managed by ExceptionHasOccured")
+                print("Documentation hosted by GitHub Pages, https://pages.github.com")
+                print("Database provided by MongoDB Atlas, https://mongodb.com")
+                print("PyMongo driver provided by MongoDB, https://pymongo.readthedocs.io/en/stable/")
+        else:
+            print("Invalid syntax")
+    elif args[0] == "me":
+        if len(args) == 1 or args[1] == "-details":
+            print("Current Account")
+            print("Username: " + uName)
+            print("User ID: " + uId)
+        elif len(args) == 2:
+            if args[1] == "-history":        
+                y = db.history.find({"UID": uId})
+                print("Equation History;")
+                for z in y:
+                    print("- " + str(z["EID"]))
+        else:
+            print("Invalid syntax")
+    elif args[0] == "q" or args[0] == "quit":
+        quit()
+    else:
+        print("Invalid syntax")
