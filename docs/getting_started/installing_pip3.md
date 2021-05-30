@@ -3,7 +3,7 @@
 Pip is the package manager used for Python. This section of the documentation will show you how to set it up.
 
 ### Installation for Windows
-- Go to https://bootstrap.pypa.io/get-pip.py and download the file
+- Go to <https://bootstrap.pypa.io/get-pip.py> and download the file
 - Open Command Prompt
 - Type `python3 `
 - Navigate to where the get-pip.py file is saved
