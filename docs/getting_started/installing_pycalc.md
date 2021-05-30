@@ -3,7 +3,7 @@
 Now that you have all the dependencies, its time to install the real deal. This section of the documentation will show you two ways of downloading PyCalc
 
 ### Installing from Source
-- Go to https://github.com/ExceptionHasOccured/PyCalc
+- Go to <https://github.com/ExceptionHasOccured/PyCalc>
 - Click the green *Code* button and select *Download Zip*
 - Extract the files
 
