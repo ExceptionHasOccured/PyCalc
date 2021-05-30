@@ -93,7 +93,7 @@ while True:
                     print("- " + str(z["EID"]))
         else:
             print("Invalid syntax")
-    elif args[0] == "doc":
+    elif args[0] == "docs":
         if len(args) == 1:
             print("For more information on how PyCalc works and how to use it, visit https://exceptionhasoccured.github.io/PyCalc/")
         elif len(args) == 2:

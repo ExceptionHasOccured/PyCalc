@@ -34,4 +34,4 @@ When PyCalc starts you will be presented with this text
 > 
 ```
 Type *1* and press enter.
-When prompted input your username and UID. If they are valid, it should say *Auth succesful* and display the standard PyCalc terminal prompt.
+When prompted to input your username and UID. If they are valid, it should say *Auth successful* and display the standard PyCalc terminal prompt.
